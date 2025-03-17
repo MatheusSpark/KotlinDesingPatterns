@@ -1,3 +1,5 @@
+package StructuralPatterns
+
 import org.assertj.core.api.Assertions
 import org.junit.jupiter.api.Test
 
@@ -25,7 +27,7 @@ interface DatabaseDataConverter {
     fun convertData(data: List<DatabaseData>): List<DisplayDataType>
 }
 
-class DataDisplayAdapter( val display: DataDisplay): DatabaseDataConverter{
+class DataDisplayAdapter( val display: DataDisplay): DatabaseDataConverter {
     override fun convertData(data: List<DatabaseData>): List<DisplayDataType> {
        val returnList = arrayListOf<DisplayDataType>()
         for (data in data){

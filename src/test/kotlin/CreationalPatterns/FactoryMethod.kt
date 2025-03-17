@@ -1,8 +1,10 @@
+package CreationalPatterns
+
 import org.assertj.core.api.Assertions
 import org.junit.jupiter.api.Test
 
 sealed class Country{
-    object Canada:Country()
+    object Canada: Country()
 }
 
 object Spain : Country()

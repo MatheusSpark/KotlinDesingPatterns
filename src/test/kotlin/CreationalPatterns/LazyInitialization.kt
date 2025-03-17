@@ -1,3 +1,5 @@
+package CreationalPatterns
+
 import org.assertj.core.api.Assertions
 import org.junit.jupiter.api.Test
 
@@ -9,7 +11,7 @@ class AlertBox {
     }
 }
 class Window {
-    val box by lazy {AlertBox()}
+    val box by lazy { AlertBox() }
 
     fun showMessage(message: String){
         box.message = message

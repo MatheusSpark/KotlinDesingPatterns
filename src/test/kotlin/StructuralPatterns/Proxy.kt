@@ -1,4 +1,5 @@
-import org.assertj.core.api.Assertions
+package StructuralPatterns
+
 import org.junit.jupiter.api.Test
 
 interface Image {
